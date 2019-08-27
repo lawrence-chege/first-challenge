@@ -1,0 +1,31 @@
+body {
+    background-color: chocolate;
+}
+nav {
+    background-color: cadetblue;
+}
+nav a{
+    display: inline-flex;
+    padding: 1em;
+    font-size: 1.8em;
+    /* float: right;  */
+}
+nav a:first-child{
+    float: left;
+}
+[blog] {
+    padding: 0em 20em 0em 20em;
+    background-color: aliceblue;
+
+}
+.steps{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    width:80%;
+}
+pre{
+    font-size: 1.1em;
+    background-color: rgba(99, 92, 93, 0.466);
+    border-radius: 5px;
+    height: 1.2em;
+}

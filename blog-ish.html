@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="http://">Mest</a>
+        <a href="http://">EITs</a>
+        <a href="blog-ish.html">Blog-ish</a>
+    </nav>
+    <main blog>
+        <heading>
+            <h1>Git 101 for Dummies</h1>
+        </heading>
+        <article>
+            <p quick-intro class="steps">So Day 2 of class ... Tough day... The magic of git
+                I know modt if not all of us managed to complete the task with or without some help.
+                If you did it without any help... bye bye this is not for you.
+                If this was Greek to you then welcome home.
+            </p>
+
+            <p class="steps"> The first step is to create a repository or a working folder.
+                This can be done either locally on your laptop or online on github.com . 
+                I prefer to do it online on github since it makes the other steps more seamless.
+            </p>
+            <h3> Method 1 - Localy :ps I don't like it so google on your own :-)</h3>
+            <h3>Method 2 - Github.com  : heeey !</h3>
+            <p class="steps"> Go to github.com , login to your account.
+                Go to top right corner and click the plus sign...
+                yea that is the new repository button. click it like you have beef.
+            </p>
+            <img src="" alt="There is supposed to be a screenshot here but there was no internet" srcset="">
+            <p class="steps">
+                Now fill in the repository name 
+                <em>remember to use descriptive or fun names</em>
+                Add a description about what the repo is about too.
+                Tick the initialize Readme checkbox 
+                --we will come back to that later
+                Ofcourse now is a good time to click create.
+            </p>
+            <img src="" alt="There is supposed to be a screenshot here too" srcset="">
+            <p class="steps">
+                First part is done ... I know you're wondering when we are going to use the terminal right? no?
+                Here comes the juicy part.
+                On your newly created  repository , there is a clone or download button.
+                click on the clone part. 
+                A link pops up in a boxy-thing. select the link and copy it.
+            </p>
+            <img src="" alt="You know the drill" srcset="">
+            <p class="steps">
+                Now on your terminal or git bash `cd to the directory/folder you want to clone your repo to. 
+                I will use the desktop folder so I will cd to it
+            </p>
+            <img src="" alt="TYou do know there are times there was no screenshots right?" srcset="">
+            <pre>cd Desktop</pre>
+            <p class="steps">
+                Now type git clone and paste the link you copied next to it and hit enter
+            </p>
+            <pre>git clone https://github.com/lawrence-chege/first-challenge.git</pre>
+            <p class="steps">Wait for it to finish ... that shouldn't take long 
+                Now lets do the work-ish... 
+                cd into the cloned folder ... in my case its `first-challenge`
+            </p>
+            <pre>cd first-challenge</pre>
+            <p class="steps">Next we are going to create the `index.html` file.
+                You could call it anyway you want but the name index.html is recomended for the start page
+            especially since we are going to host it on github pages...but we will get to that later </p>
+            <pre>touch index.html</pre>
+            <p class="steps">Now open the file with whichever text-editor you have and write the html code 
+                pause tutorial and write the code ... don't copy paste or you will never learn.
+                are you done now? 
+                lets now tell git that we are done with updating the file.
+                we use git add `filename` . This tells git to start tracking the changes made to that file.
+            </p>
+            <pre>git add index.html</pre>
+            <p class="steps"> Now lets tell git to save the instance of that file...
+                we do this using the git commit -m "message of what was chaged"
+                keep the message concise ,descriptive and in present contionous tense.
+                like an instruction to someone --- there are other ways but that is for later
+            </p>
+            <pre>git commit -m "add hello world to page"</pre>
+            <p class="steps">Now that git has saved the instance of the file locally, 
+                you can continue working on the file and keep saving other instances/checkpoints or
+                you can push the saved checkpoint to the online repository.
+                We do that by using the git push command.
+            
+            </p>
+            <pre>git push origin master</pre>
+            <p class="steps"> am tired now and its late... 
+                the github publishing is for kesho...maybe 
+                plus there is no internet :-(
+            </p>
+        </article>
+    </main>
+    
+</body>
+</html>
