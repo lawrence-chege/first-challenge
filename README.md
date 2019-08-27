@@ -1,2 +1,3 @@
-# first-challenge
-Challenge One
+# Challenge One
+> This is the first challenge of introduction to technology
+
