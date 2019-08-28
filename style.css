@@ -9,8 +9,16 @@ nav a{
     display: inline-flex;
     padding: 1em;
     font-size: 1.8em;
-    /* float: right;  */
+    }
+
+nav a:active{
+    color: aliceblue;
 }
+
+nav a:visited{
+    color: chartreuse;
+}
+
 nav a:first-child{
     float: left;
 }
@@ -30,3 +38,8 @@ pre{
     border-radius: 5px;
     height: 1.2em;
 }
+.biz-intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
